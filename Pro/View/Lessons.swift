@@ -15,8 +15,8 @@ struct Lessons: View {
             Rectangle()
                 .foregroundColor(.clear)
                 .background(LinearGradient(gradient: Gradient(colors: [Color("l"), Color("t")]), startPoint: .leading, endPoint: .trailing))
-            VStack{
-                Text("Lessons").font(.custom("ND Astroneer", size: 24)).foregroundColor(.white)
+            VStack(spacing:0){
+                Text("Lessons").font(.custom("ND Astroneer", size: 24)).foregroundColor(.white).padding(.bottom)
                
                    
                         HStack(spacing:0){
