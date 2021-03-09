@@ -13,7 +13,7 @@ struct Transition:View {
         if transition == 1{
             SignIn( transition: $transition)
         } else  if transition == 2{
-            Main()
+            BottomBar()
         }
     }
 }

@@ -62,11 +62,11 @@ struct Sig_Previews: PreviewProvider {
 }
 
 
-
-struct Main:View {
-    var body: some View{
-        ZStack{
-            Color.red
-        }
-    }
-}
+//
+//struct Main:View {
+//    var body: some View{
+//        ZStack{
+//            Color.red
+//        }
+//    }
+//}
