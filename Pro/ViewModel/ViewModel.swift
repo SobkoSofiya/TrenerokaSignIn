@@ -13,6 +13,7 @@ import SwiftyJSON
 
 
 class ViewModel: ObservableObject {
+    @Published var modelLessons:[ModelLessons] = []
     @Published var model:[Model] = []
 //    @Published var perehod = 0
     func sigUp(user:String, password:String, email:String) {
@@ -53,6 +54,21 @@ class ViewModel: ObservableObject {
 //                let err = JSON(error)
 //                let ur = err["error"].stringValue
                 co!("", error.localizedDescription)
+                print(error)
+            }
+        }
+    }
+    func getLessons()  {
+        let url = "http://gym.areas.su//lessons"
+        AF.request(url, method: .get).validate().responseJSON { [self]response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                for i in 0..<json.count{
+                    modelLessons.append(ModelLessons(category: json[i]["category"].stringValue, id: json[i]["id"].stringValue, url: json[i]["url"].stringValue))
+                }
+                print("JSON: \(json)")
+            case .failure(let error):
                 print(error)
             }
         }

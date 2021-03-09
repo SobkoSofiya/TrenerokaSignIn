@@ -15,6 +15,10 @@ struct BottomBar:View {
                 Image("Plan")
                 Text("Plan")
             } }
+            Lessons().tabItem { VStack{
+                Image("lessons")
+                Text("Lessons")
+            } }
         }
     }
 }
