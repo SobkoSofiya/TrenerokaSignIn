@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C3B4881F25F75A2500CF87A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4881E25F75A2500CF87A3 /* AppDelegate.swift */; };
 		C3B4882125F75A2500CF87A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4882025F75A2500CF87A3 /* SceneDelegate.swift */; };
-		C3B4882325F75A2500CF87A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4882225F75A2500CF87A3 /* ContentView.swift */; };
 		C3B4882525F75A2500CF87A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B4882425F75A2500CF87A3 /* Assets.xcassets */; };
 		C3B4882825F75A2500CF87A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B4882725F75A2500CF87A3 /* Preview Assets.xcassets */; };
 		C3B4882B25F75A2500CF87A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3B4882925F75A2500CF87A3 /* LaunchScreen.storyboard */; };
 		C3B4883625F75A2500CF87A3 /* ProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4883525F75A2500CF87A3 /* ProTests.swift */; };
 		C3B4884125F75A2500CF87A3 /* ProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4884025F75A2500CF87A3 /* ProUITests.swift */; };
+		C3B4885225F75A2D00CF87A3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4885125F75A2D00CF87A3 /* Model.swift */; };
+		C3B4885725F75A3400CF87A3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4885625F75A3400CF87A3 /* ViewModel.swift */; };
+		C3B4886525F75A8300CF87A3 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = C3B4886425F75A8300CF87A3 /* SwiftyJSON */; };
+		C3B4886B25F75AC500CF87A3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C3B4886A25F75AC500CF87A3 /* Alamofire */; };
+		C3B4887025F75C8F00CF87A3 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4886F25F75C8F00CF87A3 /* SignIn.swift */; };
+		C3B4888C25F7653600CF87A3 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B4888B25F7653600CF87A3 /* Transition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		C3B4881B25F75A2500CF87A3 /* Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B4881E25F75A2500CF87A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3B4882025F75A2500CF87A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C3B4882225F75A2500CF87A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3B4882425F75A2500CF87A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3B4882725F75A2500CF87A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C3B4882A25F75A2500CF87A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		C3B4883C25F75A2500CF87A3 /* ProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B4884025F75A2500CF87A3 /* ProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProUITests.swift; sourceTree = "<group>"; };
 		C3B4884225F75A2500CF87A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B4885125F75A2D00CF87A3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C3B4885625F75A3400CF87A3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C3B4886F25F75C8F00CF87A3 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		C3B4888B25F7653600CF87A3 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B4886525F75A8300CF87A3 /* SwiftyJSON in Frameworks */,
+				C3B4886B25F75AC500CF87A3 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,12 +109,10 @@
 		C3B4881D25F75A2500CF87A3 /* Pro */ = {
 			isa = PBXGroup;
 			children = (
-				C3B4881E25F75A2500CF87A3 /* AppDelegate.swift */,
-				C3B4882025F75A2500CF87A3 /* SceneDelegate.swift */,
-				C3B4882225F75A2500CF87A3 /* ContentView.swift */,
-				C3B4882425F75A2500CF87A3 /* Assets.xcassets */,
-				C3B4882925F75A2500CF87A3 /* LaunchScreen.storyboard */,
-				C3B4882C25F75A2500CF87A3 /* Info.plist */,
+				C3B4887D25F762F700CF87A3 /* Common */,
+				C3B4887625F762CF00CF87A3 /* Model */,
+				C3B4888125F7630100CF87A3 /* ViewModel */,
+				C3B4887425F7629900CF87A3 /* View */,
 				C3B4882625F75A2500CF87A3 /* Preview Content */,
 			);
 			path = Pro;
@@ -136,6 +144,43 @@
 			path = ProUITests;
 			sourceTree = "<group>";
 		};
+		C3B4887425F7629900CF87A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4888B25F7653600CF87A3 /* Transition.swift */,
+				C3B4886F25F75C8F00CF87A3 /* SignIn.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3B4887625F762CF00CF87A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4885125F75A2D00CF87A3 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3B4887D25F762F700CF87A3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4881E25F75A2500CF87A3 /* AppDelegate.swift */,
+				C3B4882025F75A2500CF87A3 /* SceneDelegate.swift */,
+				C3B4882425F75A2500CF87A3 /* Assets.xcassets */,
+				C3B4882925F75A2500CF87A3 /* LaunchScreen.storyboard */,
+				C3B4882C25F75A2500CF87A3 /* Info.plist */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C3B4888125F7630100CF87A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C3B4885625F75A3400CF87A3 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +197,10 @@
 			dependencies = (
 			);
 			name = Pro;
+			packageProductDependencies = (
+				C3B4886425F75A8300CF87A3 /* SwiftyJSON */,
+				C3B4886A25F75AC500CF87A3 /* Alamofire */,
+			);
 			productName = Pro;
 			productReference = C3B4881B25F75A2500CF87A3 /* Pro.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +272,10 @@
 				Base,
 			);
 			mainGroup = C3B4881225F75A2500CF87A3;
+			packageReferences = (
+				C3B4886325F75A8300CF87A3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				C3B4886925F75AC500CF87A3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = C3B4881C25F75A2500CF87A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,9 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3B4888C25F7653600CF87A3 /* Transition.swift in Sources */,
+				C3B4885725F75A3400CF87A3 /* ViewModel.swift in Sources */,
 				C3B4881F25F75A2500CF87A3 /* AppDelegate.swift in Sources */,
 				C3B4882125F75A2500CF87A3 /* SceneDelegate.swift in Sources */,
-				C3B4882325F75A2500CF87A3 /* ContentView.swift in Sources */,
+				C3B4885225F75A2D00CF87A3 /* Model.swift in Sources */,
+				C3B4887025F75C8F00CF87A3 /* SignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +422,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Pro/Common/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = Pro/Common/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -421,6 +479,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Pro/Common/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = Pro/Common/info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -439,7 +499,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Pro/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Pro/Info.plist;
+				INFOPLIST_FILE = Pro/Common/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = Pro/Common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -459,7 +520,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Pro/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Pro/Info.plist;
+				INFOPLIST_FILE = Pro/Common/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = Pro/Common/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -591,6 +653,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3B4886325F75A8300CF87A3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C3B4886925F75AC500CF87A3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C3B4886425F75A8300CF87A3 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3B4886325F75A8300CF87A3 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		C3B4886A25F75AC500CF87A3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C3B4886925F75AC500CF87A3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C3B4881325F75A2500CF87A3 /* Project object */;
 }
